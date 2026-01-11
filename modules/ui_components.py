@@ -7,13 +7,12 @@ def inject_custom_css():
         <style>
         @import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');        
         
-        /* 1. Target ONLY the big titles and the result text */
-        /* This is the safest way to keep your icons working */
+        /* 1. Hide Streamlit Default Elements */
         .stApp h1, .stApp h2, .stApp h3, [data-testid="stMarkdownContainer"] p {
             font-family: 'Delius', cursive !important;
         }
 
-        /* 5. UI Elements (Footer & Layout) */
+        /* 2. Sticky Footer Styles */
         .sticky-footer {
             position: fixed;
             left: 0;
@@ -53,11 +52,13 @@ def inject_custom_css():
     """, unsafe_allow_html=True)
 
 def render_footer():
-    # Replace these with your actual URLs
-    github_url = "https://github.com/yourusername"
-    linkedin_url = "https://linkedin.com/in/yourusername"
-    x_url = "https://x.com/yourusername"
     
+    # Social Media URLs
+    github_url = "https://github.com/josephayanwuyi"
+    linkedin_url = "https://www.linkedin.com/in/josephayanwuyi/"
+    x_url = "https://x.com/joshman_100"
+    
+    # Footer HTML
     footer_html = f"""
     <div class="sticky-footer">
         <div style="font-size: 14px; color: #444;">

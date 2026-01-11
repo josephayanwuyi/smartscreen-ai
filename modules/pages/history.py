@@ -23,7 +23,7 @@ def render_history():
                 if st.button("🗑️ Delete", key=f"del_{scan_id}"):
                     delete_scan(scan_id)
                     st.toast("Scan deleted!")
-                    st.rerun() # Refresh the page to show it's gone
+                    st.rerun() # Refresh the history view
             with col2:
                 wa_url = f"https://wa.me/?text={content[:100]}..."
                 st.link_button("💬 WhatsApp", wa_url)

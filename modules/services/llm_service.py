@@ -17,7 +17,7 @@ client = Groq(
     timeout=60.0,
     http_client=httpx.Client(verify=False) # This skips the SSL handshake check
 )
-# client = Groq(api_key="")
+
 
 def encode_image(image_file):
     # Works with both file paths or file-like objects

@@ -24,7 +24,7 @@ def render_sidebar(hide_nav=False): # Add this parameter
                 label="Navigation",
                 options=pages,
                 index=default_idx,
-                key="main_nav_radio" # <--- UNIQUE KEY ADDED HERE
+                key="main_nav_radio"
             )
             
             st.session_state.page = selected_page

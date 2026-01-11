@@ -3,7 +3,6 @@ import streamlit as st
 
 from modules.services.scan_service import analyze_image
 from modules.services.db_service import save_scan
-from modules.services.background_service import run_in_background
 
 
 def process_scan(image_bytes, user, model):

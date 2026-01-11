@@ -1,4 +1,5 @@
 import streamlit as st
+
 from modules.state import init_state
 from modules.sidebar import render_sidebar
 from modules.services.db_service import backup_database, init_db

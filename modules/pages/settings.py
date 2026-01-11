@@ -39,7 +39,7 @@ def render_settings():
             st.error("API Connection: Offline ❌")
             
         st.divider()
-        # Display the current model name
+        # Display current AI model
         current_model = st.session_state.get("ai_model", "meta-llama/llama-4-scout-17b-16e-instruct")
         st.caption(f"Running on Model: {current_model}")
     

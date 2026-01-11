@@ -10,9 +10,10 @@ def init_state():
     if "guest_id" not in st.session_state:
         st.session_state.guest_id = str(uuid.uuid4())
 
-    # 3. Scan Counter (for your 5-scan limit logic)
+    # 3. Scan Counter (for the 5-scan limit logic)
     if "scan_count" not in st.session_state:
         st.session_state.scan_count = 0
 
+    # 4. AI Model Selection
     if "ai_model" not in st.session_state:
         st.session_state.ai_model = "meta-llama/llama-4-scout-17b-16e-instruct"
