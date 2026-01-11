@@ -1,6 +1,5 @@
 # Web Framework
 streamlit
-streamlit-components-v1
 
 # AI & API
 groq
