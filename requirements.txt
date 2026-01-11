@@ -1,0 +1,14 @@
+# Web Framework
+streamlit
+streamlit-components-v1
+
+# AI & API
+groq
+httpx
+
+# Security & State
+bcrypt
+python-dotenv
+
+# Image Processing
+pillow
