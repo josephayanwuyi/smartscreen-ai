@@ -1,0 +1,16 @@
+# Security: Hide my keys and passwords
+.env
+
+# Environment: Hide the massive library folder
+.venv/
+venv/
+env/
+
+# Database & Backups: Keep data local
+*.db
+backups/
+logs/
+
+# Python: Ignore temporary cache files
+__pycache__/
+*.pyc
